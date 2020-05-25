@@ -1,0 +1,51 @@
+// Font weights
+$extra-bold: 800;
+$bold: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+$sans: 'Montserrat', sans-serif;
+
+@font-face {
+    font-family: "Montserrat";
+    src : url("../font/Montserrat-Regular.ttf");
+}
+
+h1, %h1 {
+  font-size: 2.25rem;
+  font-weight: $light;
+  margin-bottom: 2rem;
+}
+
+h2, %h2 {
+  font-size: 1.5rem;
+  font-weight: $medium;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+h3, %h3 {
+  font-size: 1.5rem;
+}
+
+h4, %h4 {
+  font-size: 1.1rem;
+}
+
+h5, %h5 {
+  font-size: 0.75rem;
+}
+
+p, .p {
+  font-size: 1rem;
+}
+
+p.big-paragraph {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: $medium;
+}

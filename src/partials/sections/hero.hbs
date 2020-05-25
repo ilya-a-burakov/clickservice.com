@@ -1,0 +1,27 @@
+<section style="padding-top: 10rem" class="hero section">
+    <div class="content">
+	   <h1>Для тех, кто делает ремонт самостоятельно, но нуждается в совете профессионального дизайнера</h1>
+	   <ul>
+		  <li>Улучшим планировку, чтобы сделать ее максимально функциональной и удобной</li>
+		  <li>Поможем подобрать доступные и качественные материалы, а еще поделимся скидками от партнеров</li>
+		  <li>Расскажем о всех технических тонкостях размещения розеток</li>
+		  <li>Посоветуем как грамотно выставить освещение</li>
+	   </ul>
+	   <p class="big-paragraph">Эти и еще множество преимуществ вы получите при подключении к сервису Дизайнер Онлайн!</p>
+       <button id="scroll-what-include" class="button">Хочу узнать подробности</button>
+    </div>
+
+    <div class="wave">
+        <img src="/img/waves/hero.svg">
+    </div>
+</section>
+
+<script>
+$(document).ready(function (){
+    $("#scroll-what-include").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#what-include").offset().top + (-40)
+        }, 2000);
+    });
+});
+</script>

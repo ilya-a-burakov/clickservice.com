@@ -1,0 +1,52 @@
+<section class="testimonials section">
+    <header>
+        <h2>Отзывы</h2>
+        <p class="big-paraph">Мы собрали реальные отзывы людей о работе с нами, мы любим свою работу и делаем все возможное, чтобы наши клиенты остались довольны.</p>
+    </header>
+    
+    <div class="testimonials-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 5}'>
+        <div><img src="/img/testimonials/3.png"></div>
+        <div><img src="/img/testimonials/2.png"></div>
+        <div><img src="/img/testimonials/1.png"></div>
+        <div><img src="/img/testimonials/4.png"></div>
+        <div><img src="/img/testimonials/5.png"></div>
+    </div>
+
+    <script>
+    $(".testimonials-slider").slick({
+
+    // normal options...
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+
+    centerMode: true,
+    centerPadding: '10%',
+
+    // the magic
+    responsive: [{
+
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            infinite: true
+        }
+
+        }, {
+
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 1,
+            centerPadding: '0%',
+            // dots: true
+        }
+
+        }, {
+
+        breakpoint: 300,
+        settings: "unslick" // destroys slick
+
+        }]
+    });
+    </script>
+</section>

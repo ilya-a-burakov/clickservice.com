@@ -1,0 +1,100 @@
+<section id="request-call" class="request-call section">
+    <div class="right-col">
+        <form class="form" method="post">
+            <legend>
+                <ul>
+                    <li>Сталкивались с недобросовестными дизайнерами и исполнителями, которые не готовы доказать свой профессиональный уровень?</li>
+                    <li>Мы предоставим Вам первую консультацию с нашими дизайнерами абсолютно бесплатно!</li>
+                    <li>Ответим на любой вопрос за 60 минут*</li>
+                </ul>
+            </legend>
+            <fieldset>
+                <input name="phone" placeholder="Телефон" required>
+                <input name="name" placeholder="Имя">
+                <button class="submit button">Заказать звонок</button>
+                <span>Ответы направляются с 10 до 19 по Москве. Время ожидания ответа может быть увеличено.</span>
+            </fieldset>
+        </form> 
+    </div>
+    <div class="left-col">
+        <div class="slider">
+            <ul class="text-slider">
+                <li class="active-slide textslide">
+                    <h3>Екатерина Корнилова</h3>
+                    <p class="big-paraph">Руководитель отдела дизайна<br> Клик Сервис</p>
+                </li>
+                <li class="textslide">
+                    <h3>Полина Дементьева</h3>
+                    <p class="big-paraph">Дизайнер интерьеров в компании<br> Клик Сервис</p>
+                </li>
+                <li class="textslide">
+                    <h3>Лилия Тарлавина</h3>
+                    <p class="big-paraph">Дизайнер интерьеров в компании<br> Клик Сервис</p>
+                </li>
+                <li class="textslide">
+                    <h3>Оксана Синицына</h3>
+                    <p class="big-paraph">Дизайнер интерьеров в компании<br> Клик Сервис</p>
+                </li>
+                <li class="textslide">
+                    <h3>Анастасия Новикова</h3>
+                    <p class="big-paraph">Дизайнер интерьеров в компании<br> Клик Сервис</p>
+                </li>
+                <li class="textslide">
+                    <h3>Панкратова Ирина</h3>
+                    <p class="big-paraph">Дизайнер интерьеров в компании<br> Клик Сервис</p>
+                </li>
+            </ul>
+            <div class="slider-controls">
+                <button class="slider-left"><span class="left-pointing-triangle">&nbsp;</span></button><button class="slider-right"><span class="right-pointing-triangle">&nbsp;</span></button>       
+            </div>
+        </div>
+        <ul class="photo-slider">
+            <img src="/img/personas/1.png" class="active-photo-slide photo-slide">
+            <img src="/img/personas/2.png" class="photo-slide">
+            <img src="/img/personas/3.png" class="photo-slide">
+            <img src="/img/personas/4.png" class="photo-slide">
+            <img src="/img/personas/5.png" class="photo-slide">
+            <img src="/img/personas/6.png" class="photo-slide">
+        </ul>
+    </div>
+    <div class="wave">
+        <img src="/img/waves/request-call.svg">
+    </div>
+</section>
+
+<script>
+$('.slider-right').click(function() {
+    var $next = $('.textslide.active-slide').removeClass('active-slide').next('.textslide');
+    if ($next.length) {
+        $next.addClass('active-slide'); 
+    }
+    else {
+        $(".textslide:first").addClass('active-slide');
+    }
+    var $nextphoto = $('.active-photo-slide.photo-slide').removeClass('active-photo-slide').next('.photo-slide');
+    if ($nextphoto.length) {
+        $nextphoto.addClass('active-photo-slide'); 
+    }
+    else {
+        $(".photo-slide:first").addClass('active-photo-slide');
+    }                                   
+});
+
+$('.slider-left').click(function() {
+    var $next = $('.textslide.active-slide').removeClass('active-slide').prev('.textslide');
+    if ($next.length) {
+        $next.addClass('active-slide'); 
+    }
+    else {
+        $(".textslide:last").addClass('active-slide');
+    }
+        var $nextphoto = $('.active-photo-slide.photo-slide').removeClass('active-photo-slide').prev('.photo-slide');
+    if ($nextphoto.length) {
+        $nextphoto.addClass('active-photo-slide'); 
+    }
+    else {
+        $(".photo-slide:last").addClass('active-photo-slide');
+    }                                   
+});
+
+</script>

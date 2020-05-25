@@ -1,0 +1,219 @@
+<header class="page-header">
+      <a href="/" class="logo">
+        <img src="img/parts/click_logo.svg" alt="" />
+      </a>
+
+      <ul class="logos">
+        <li><span>Выберите сервис:</span></li>
+        <li>
+          <a href="#">
+            <img src="img/parts/urist_copy.svg" class="urist_svg" alt="" />
+          </a>
+          <ul>
+            <li>
+              <a href="/nalogoviy_vichet/">Налоговый вычет</a>
+              <ul>
+                <li>
+                  <a href="/nalogoviy_vichet/">Заполнить декларацию</a>
+                </li>
+                <li>
+                  <a href="/vichet_lecarstva/">За лекарства</a>
+                </li>
+                <li>
+                  <a href="/vichet_lechenie/">За лечение</a>
+                </li>
+                <li>
+                  <a href="/vichet_obuchenie/">За обучение</a>
+                </li>
+                <li>
+                  <a href="/vichet_ipoteka/">За ипотеку</a>
+                </li>
+                <li>
+                  <a href="/vichet_nedvijka/">За недвижимость</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/avtojurist/">Автоюрист</a>
+            </li>
+            <li>
+              <a href="/work/">Трудовые споры</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="img/parts/dizain_interiera_copy.svg"
+              class="dizain_interiera_svg"
+              alt=""
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="/design/">Дизайн</a>
+              <ul>
+                <li>
+                  <a href="/detskaya_komnata/">Детская комната</a>
+                </li>
+                <li>
+                  <a href="/design_planirovka/">Планировка</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/telemed/">
+            <img
+              src="img/parts/telemedicina_copy.svg"
+              class="telemedicina_svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/parts/strahovanie_copy.svg" class="strahovanie_svg" />
+          </a>
+          <ul>
+            <li>
+              <a href="/insur_flat/">Страхование квартиры</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="hrefs">
+        <li>
+          <a href="tel:88005118665" class="number_phone">8 800 511 86 65</a>
+        </li>
+        <li><a href="/cabinet/#/login/">Личный кабинет</a></li>
+      </ul>
+
+      <ul class="mobile menu_button_container">
+        <li>
+          <a href="#">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="mobile menu_container">
+      <ul>
+        <li>
+          <a href="/nalogoviy_vichet/">
+            <img src="img/parts/urist_copy.svg" alt="" />
+            <ul>
+              <li>
+                <a href="/nalogoviy_vichet/">Заполнить декларацию</a>
+              </li>
+              <li>
+                <a href="/vichet_lecarstva/">За лекарства</a>
+              </li>
+              <li>
+                <a href="/vichet_lechenie/">За лечение</a>
+              </li>
+              <li>
+                <a href="/vichet_obuchenie/">За обучение</a>
+              </li>
+              <li>
+                <a href="/vichet_ipoteka/">За ипотеку</a>
+              </li>
+              <li>
+                <a href="/vichet_nedvijka/">За недвижимость</a>
+              </li>
+              <li>
+                <a href="/avtojurist/">Автоюрист</a>
+              </li>
+              <li>
+                <a href="/work/">Трудовые споры</a>
+              </li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <a href="/design/">
+            <img src="img/parts/dizain_interiera_copy.svg" alt="" />
+          </a>
+          <ul>
+            <li>
+              <a href="/design/">Дизайн</a>
+              <ul>
+                <li>
+                  <a href="/detskaya_komnata/">Детская комната</a>
+                </li>
+                <li>
+                  <a href="/design_planirovka/">Планировка</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/telemed/">
+            <img src="./img/parts/telemedicina_copy.svg" alt="" />
+          </a>
+          <ul>
+            <li>
+              <a href="/telemed/">Телемедицина</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/parts/strahovanie_copy.svg" />
+          </a>
+          <ul>
+            <li>
+              <a href="/insur_flat/">Страхование квартиры</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="second_hrefs">
+        <li><a href="tel:88005118665">8 800 511 86 65</a></li>
+        <li><a href="/cabinet/#/login/">Личный кабинет</a></li>
+      </ul>
+    </div>
+
+<script>
+$(document).mouseup(function (e) {
+    let el = $("ul");
+    if (!el.is(e.target) && el.has(e.target).length === 0) {
+      $(this).find("ul").removeClass("opened");
+    }
+  });
+  
+$("ul.logos li").each(function () {
+    $(this).click(function () {
+      $("ul.logos li").each(function () {
+        $(this).find("ul").removeClass("opened");
+      });
+      $(this).find("ul").addClass("opened");
+    });
+  });
+
+  $(".mobile.menu_button_container li a").click(function () {
+    if ($(this).hasClass("opened")) {
+      $(".mobile.menu_container").hide();
+      $(".menu_button_container li a i")
+        .removeClass("fa-times")
+        .addClass("fa-bars");
+      $(this).removeClass("opened");
+      $("html, body").css("overflow", "auto");
+    } else {
+      $(".mobile.menu_container").show().css("display", "block");
+
+      $(".menu_button_container li a i")
+        .removeClass("fa-bars")
+        .addClass("fa-times");
+      $(this).addClass("opened");
+      $("html, body").css("overflow", "hidden");
+    }
+
+    return false;
+  });
+  </script>

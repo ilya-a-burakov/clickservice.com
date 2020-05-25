@@ -1,0 +1,36 @@
+@import '../vars';
+
+.contact-us {
+    color: $white;
+    background: $green;
+    // border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    background-image: url('/img/waves/contact-us.svg');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    header {
+        text-align: center;
+
+        .button {
+            display: inline-block;
+            color: white;
+            background: $yellow;
+
+            &:hover {
+                background: $blue;
+                cursor: pointer;
+                transition:all 0.3s ease;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .contact-us {
+        header {
+            h1 { font-size: 1.5rem; }
+        }
+    }
+}
