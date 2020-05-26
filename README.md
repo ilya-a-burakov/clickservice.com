@@ -1,4 +1,4 @@
-Project Template
+Click Service Landing
 ========================================
 
 #### _Because web development doesn't need to be a pain._
