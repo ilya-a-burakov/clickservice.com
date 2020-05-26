@@ -154,7 +154,7 @@
     .request-call{
          .left-col { 
             .photo-slider { 
-                bottom: -2rem;
+                // bottom: -2rem;
             }
         }              
     }
@@ -193,13 +193,14 @@
 @media screen and (max-width: 640px) {
     .request-call{
         flex-wrap: wrap;
-        padding-bottom: 33rem;
+        padding-bottom: 25rem;
 
          .left-col { 
             width: 100%; 
 
             .photo-slider { 
-                right: -4rem;
+                right: -1rem;
+                bottom: 0rem;
             }
         }
     }
