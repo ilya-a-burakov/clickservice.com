@@ -104,6 +104,25 @@ img {
 	}
 }
 
+@media screen and (max-width: 960px) {
+    .divided-button {
+        span {
+            &:nth-child(1), &:nth-child(2) {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            &:nth-child(1) {
+                border-radius: 0.5rem 0.5rem 0 0;
+            } 
+
+             &:nth-child(2) {
+                border-radius: 0 0 0.5rem 0.5rem;
+            } 
+        }
+    }
+}
+
 .lock-site {
     width: 100%;
     height: 100%;

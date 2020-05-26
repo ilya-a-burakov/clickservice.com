@@ -1,0 +1,46 @@
+@import '../vars';
+
+.our-team {
+    color: $white;
+    background: $green;
+    
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .team-member {
+            width: calc(25%-0.75rem);
+            padding: 2rem;
+            color: $black;
+            background: $white;
+            
+            margin-bottom: 1rem;
+
+            border-radius: 0.5rem;
+            box-shadow: 3px 3px 19px -7px rgba(15,117,71,0.33);
+
+            img { margin-bottom: 1rem; }
+            h4 { margin-bottom: 0.25rem; } 
+            p {  opacity: 0.5; }
+        }
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+.our-team {
+    .content {
+
+        .team-member {
+            width: calc(50%-0.5rem);
+        }
+    }
+
+}
+
+}

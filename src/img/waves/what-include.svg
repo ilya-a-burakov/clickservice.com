@@ -9,17 +9,19 @@
 </style>
 <g>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" width="1440" height="640"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<g class="st0">
-			<rect class="st1" width="1440" height="640"/>
-			<path class="st2" d="M2468,587.2l-102.8-8.8c-102.8-10-308.5-27.5-514.2-55c-205.7-26.3-411.3-62.5-617-135.1
-				C1028.3,317,822.7,208.2,617,190.7s-411.3,53.8-514.2,90.1L0,317v324h102.8c102.8,0,308.5,0,514.2,0s411.3,0,617,0s411.3,0,617,0
-				s411.3,0,514.2,0H2468V587.2z"/>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" y="181" width="1440" height="459"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st0">
+				<rect y="181" class="st1" width="1440" height="459"/>
+				<path class="st2" d="M2468,602.1l-102.8-6.3c-102.8-7.2-308.5-19.7-514.2-39.4c-205.7-18.9-411.3-44.8-617-96.9
+					c-205.7-51.1-411.3-129.2-617-141.7s-411.3,38.6-514.2,64.6L0,408.3v232.4h102.8c102.8,0,308.5,0,514.2,0s411.3,0,617,0
+					s411.3,0,617,0s411.3,0,514.2,0H2468V602.1z"/>
+			</g>
 		</g>
 	</g>
 </g>
